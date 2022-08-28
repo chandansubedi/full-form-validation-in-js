@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <form action="#" onsubmit=" return formCheck()">
+        first name :  <input type="text"   id="name" > <br>
+        Last name :  <input type="text"   id="lname" > <br>
+        email :  <input type="email"   id="email" > <br>
+       password: <input type="password" id="pass"> <br>
+       conf password: <input type="password" id="conpass"> <br>
+       Date of birth: <input type="date"> <br>
+
+       salutation: <select  onchange="show()" id="genderCheck">
+           <option value="">--slect--</option>
+           <option value="mr">Mr</option>
+           <option value="mrs">Mrs</option>
+        </select> <br> 
+        <p id="selectMsg"></p>
+
+        <!-- <br>
+        <button onclick="show()" >show</button><br>
+       -->
+        <br>
+
+
+
+       <fieldset>
+        <legend>Gender</legend>
+       Male :<input id="male" type="radio"> <br>    
+       Female :<input id="female" type="radio">
+        </fieldset>
+
+        Address : <textarea onchange="checkAddress()" id="address" cols="20" rows="4">  
+        </textarea> <br>
+        <p id="addMsg"></p>
+        <br>
+            <p  id="msg">..</p>
+            <input type="submit">
+    </form>
+        <script src="index.js"></script>
+</body>
+</html>
