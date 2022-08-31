@@ -8,7 +8,6 @@ var upassword = document.getElementById("pass").value
 var uconpass = document.getElementById("conpass").value
 
 //character and symbol validation
-var validation =  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
 
 //all field must be filled
 if(uname == "" && uemail=="" && upassword=="" && uconpass ==""   ){
